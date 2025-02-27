@@ -1,0 +1,41 @@
+body {
+    font: normal 25pt arial;
+    background-color: rgb(108, 108, 249);
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    margin: auto;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    width: 50%;
+}
+
+.numeros {
+    padding: 25px;
+    margin-top: 5px;
+}
+
+.txtn {
+    height: 25px;
+    border-radius: 3px;
+}
+
+.botao {
+    font: normal 15pt arial;
+    margin: 25px;
+    height: 35px;
+}
+
+.calculo {
+    margin-left: 25px;
+    padding-bottom: 25px;
+}
+
+footer{
+    text-align: center;
+}

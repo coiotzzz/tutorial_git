@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de Idade</title>
+    <style>
+        body{
+            background-color: rgb(159, 232, 232);
+            font: normal 25pt arial;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        .conteudo {
+            padding-top: 2%;
+            padding-left: 5%;
+        }
+
+        #idade {
+            padding: 0px;
+            height:25px;
+            width: 40%;
+        }
+        
+        #verificar{
+            width: 10%;
+            height: 25px;
+        }
+
+        section {
+            
+            margin-left: 25%;
+            margin-right: 25%;
+            background-color: white;
+            border-radius: 15px;
+            
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+    <section>
+        <div class="conteudo">
+            <div>
+                <p class="ano">Ano de Nascimento: <input type="number" name="" id="idade"></p>
+            </div>
+            <div>
+                <p>Sexo: <input type="checkbox" name="" id="M" onclick="">Masculino
+                    <input type="checkbox" name="" id="F" onclick=""> Feminno</p>
+            </div>
+            <div>
+                <input type="button" value="Verificar" id="verificar" onclick="">
+            </div>
+            <div id="res">Preencha os dados acima pra obter o resultado...</div>
+        </div>
+    </section>
+    <footer>
+        <p><strong>&copy;maconheiro anonimo das qn</strong></p>
+    </footer>
+
+    <script>
+        var idade = document.getElementById('idade').value
+        var i = Number(idade)
+        var res = document.getElementById('res')
+        var M = document.getElementById('M')
+        var F = document.getElementById('F')
+
+        function sexo(){
+            
+        }
+
+        function calcular() {
+
+        }
+
+    </script>
+</body>
+</html>

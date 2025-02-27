@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Somando valores</title>
+    <style>
+        body {
+            background-color: black;
+            color:rgb(0, 255, 42);
+            font:normal 18pt arial
+            
+        }
+
+        #pkdq { 
+            width: 50%;
+            text-decoration: none;
+            padding: 5px;
+            background-color: rgb(255, 255, 255);
+            color:rgb(0, 0, 0);
+            font: normal 30pt arial;
+            height: 50px;
+            border-radius: 10px;
+            margin: 10%;
+        }
+
+        #pkdq:hover {
+            transform: scale(1.3);
+        }
+
+        .imagem {
+            border-radius: 25%;
+            width:70%;
+            margin-top: 40%;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    
+    <h1>Calculadora da Bocada</h1>
+    <input type="number" name="txtn1" id="txtn1" placeholder="escreva um numero"> 
+    <input type="number" name="txtn2" id="txtn2" placeholder="escreva outro numero">
+    <input type="button" value="Somar" onclick="somar()"> ou
+    <input type="button" value="Subtrair" onclick="subtrair()">
+    <div id="res">Resultado da soma:</div>
+    <div id="res2">Resultado subtração:</div>
+    
+    
+    
+
+    <div class="d-flex justify-content-center text-center m-5">
+    <a id="pkdq" href="https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2024/10/23123648/oruam-show.jpg">pukardique</a>
+</div>
+
+    <script>
+        function somar() {
+        var tn1 =  window.document.getElementById('txtn1')
+        var tn2 =   window.document.querySelector('input#txtn2')
+        var res = window.document.getElementById('res')
+        var n1 =   Number(tn1.value)
+        var n2 =   Number(tn2.value)
+        var s = n1 + n2
+        
+        res.innerHTML = `A soma de ${n1} e ${n2} a ${s}` 
+
+
+    }
+
+    function subtrair() {
+        var tn1 =  window.document.getElementById('txtn1')
+        var tn2 =   window.document.querySelector('input#txtn2')
+        var res = window.document.getElementById('res2')
+        var n1 =   Number(tn1.value)
+        var n2 =   Number(tn2.value)
+        var s = n1 - n2
+        
+        res.innerHTML = `A subtração de ${n1} e ${n2} é igual a ${s}` 
+
+
+    }
+
+    
+    </script>
+</body>
+</html>
